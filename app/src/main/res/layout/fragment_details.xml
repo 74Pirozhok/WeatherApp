@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/details_name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Николаев" />
+
+        <TextView
+            android:id="@+id/details_region_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_name_text_view"
+            tools:text="Николаевская область" />
+
+        <TextView
+            android:id="@+id/details_country_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_region_text_view"
+            tools:text="Украина" />
+
+        <TextView
+            android:id="@+id/details_temp_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_country_text_view"
+            tools:text="+28" />
+
+        <ImageView
+            android:id="@+id/details_icon_condition_image_view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/details_temp_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/details_temp_text_view" />
+
+        <TextView
+            android:id="@+id/details_text_condition_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/details_icon_condition_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/details_icon_condition_image_view"
+            app:layout_constraintTop_toTopOf="@+id/details_icon_condition_image_view"
+            tools:text="Облачно" />
+
+        <TextView
+            android:id="@+id/details_humidity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/details_icon_condition_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/details_icon_condition_image_view"
+            tools:text="Влажность:" />
+
+        <TextView
+            android:id="@+id/details_humidity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/details_humidity_label"
+            app:layout_constraintStart_toEndOf="@+id/details_humidity_label"
+            app:layout_constraintTop_toTopOf="@+id/details_humidity_label"
+            tools:text="79 %" />
+
+        <TextView
+            android:id="@+id/details_pressure_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/details_humidity_label"
+            app:layout_constraintTop_toBottomOf="@+id/details_humidity_label"
+            tools:text="Давление:" />
+
+        <TextView
+            android:id="@+id/details_pressure_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/details_pressure_label"
+            app:layout_constraintStart_toEndOf="@+id/details_pressure_label"
+            app:layout_constraintTop_toTopOf="@+id/details_pressure_label"
+            tools:text="1100 MB" />
+
+        <TextView
+            android:id="@+id/details_wind_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/details_pressure_label"
+            app:layout_constraintTop_toBottomOf="@+id/details_pressure_label"
+            tools:text="Ветер:" />
+
+        <TextView
+            android:id="@+id/details_wind_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/details_wind_label"
+            app:layout_constraintStart_toEndOf="@+id/details_wind_label"
+            app:layout_constraintTop_toTopOf="@+id/details_wind_label"
+            tools:text="ВСВ 12.4 м/с" />
+
+        <TextView
+            android:id="@+id/details_visibility_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/details_wind_label"
+            app:layout_constraintTop_toBottomOf="@+id/details_wind_label"
+            tools:text="Видимость:" />
+
+        <TextView
+            android:id="@+id/details_visibility_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/details_visibility_label"
+            app:layout_constraintStart_toEndOf="@+id/details_visibility_label"
+            app:layout_constraintTop_toTopOf="@+id/details_visibility_label"
+            tools:text="12.5 КМ" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/forecast_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_visibility_label" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
